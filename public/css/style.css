@@ -1,0 +1,288 @@
+@font-face {
+    font-family: 'Days Sans Black Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Days Sans Black Regular'), url('Days Sans Black.woff') format('woff');
+}
+
+body {
+    font-family: 'Montserrat', sans-serif !important;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.index-body{
+    margin-top: 5vh;
+}
+
+.container {
+    flex: 1;
+}
+
+.navbar {
+    min-height: 5rem;
+    max-height: 100vh;
+    background-color: #fff !important;
+    font-size: 1.5rem;
+    color: black !important;
+}
+
+.navbar-subbrand{
+    display: flex;
+    flex-direction: column;
+}
+
+.motto{
+    font-size: 0.55rem;
+}
+
+.fa-compass {
+    font-size: 2rem;
+    color: #ff385C;
+}
+
+.profile-btn{
+    height: 3rem;
+    width: 6rem !important;
+    border: 1px solid rgb(171, 171, 171) !important;
+    border-radius: 2rem !important;
+}
+
+.profile-btn:hover{
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 10px;
+}
+
+.fa-bars, .fa-user{
+    color: #ff385C;
+}
+
+/* Footer stylings */
+footer {
+    text-align: center;
+    background-color: rgb(236, 234, 234);
+}
+
+.f-info-social,
+.f-info-terms {
+    margin: auto;
+    width: 100%;
+}
+
+.f-info-social i {
+    padding-right: 2rem;
+    color: black;
+}
+
+.f-info-terms a {
+    padding-right: 2rem;
+    text-decoration: none;
+    color: black;
+}
+
+/* Index Page */
+.features-bar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.carousel{
+    min-width: 40vw;
+}
+
+.card-wrapper{
+    display: flex;
+    margin: 1rem 0;
+}
+
+.card-wrapper .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0.5;
+    margin: auto;
+    padding: auto;
+    cursor: pointer;
+}
+
+.card-wrapper .card:hover{
+    opacity: 1;
+}
+
+.card-wrapper .card i{
+    color: black;
+}
+.card-wrapper p{
+    font-size: 0.8rem;
+}
+
+.carousel-btn{
+    max-width: 2rem;
+    max-height: 2rem;
+    margin: 1rem 0;
+    border: 2px solid rgb(175, 172, 172) !important;
+    border-radius: 50% !important;
+}
+
+.carousel-btn:hover{
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 10px;
+}
+
+.carousel-icon{
+    height: 1rem !important;
+    width: 1rem !important;
+}
+
+.tax-div{
+    font-size: 1rem;
+    height: 3rem;
+    width: 15rem;
+    padding: 0.5rem;
+    border: 1px solid grey;
+    border-radius: 2rem;
+}
+
+.tax-div:hover{
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 10px;
+}
+  
+.tax-info{
+    display: none;
+}
+
+.nav-search{
+    width: 25vw !important;
+    border-radius: 2rem !important;
+}
+.nav-srch-btn{
+    background-color: #ff385C !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 2rem !important;
+}
+
+@media screen and (max-width: 992px){
+    .search-bar{
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .tax-div{
+        display: none;
+    }
+    .features-bar{
+        display: block;
+    }
+    .carousel{
+        min-width: 100%;
+    }
+    .carousel-btn{
+        max-width: 2rem;
+        max-height: 2rem;
+        border: none !important;
+    }
+    
+    .carousel-btn:hover{
+        box-shadow: none;
+    }
+}
+
+/* Card styling */
+.card {
+    border: none !important;
+    margin-bottom: 2rem;
+}
+
+.card-img-top {
+    border-radius: 1rem !important;
+    width: 100% !important;
+    object-fit: cover !important;
+}
+
+.card-body {
+    padding: 0 !important;
+}
+
+.card-text p {
+    font-weight: 400;
+}
+
+.card-link {
+    text-decoration: none;
+}
+
+/* Hover Effect */
+.card-img-overlay {
+    opacity: 0;
+}
+
+.card-img-overlay:hover {
+    opacity: 0.2;
+    background-color: white;
+}
+
+/* Add Listing */
+.add-btn,
+.edit-btn {
+    background-color: #ff385C !important;
+    border: none !important;
+}
+
+.add-btn:hover {
+    background-color: black!important;
+}
+
+.edit-btn:hover {
+    background-color: black !important;
+}
+
+/* Show Page */
+
+.show-img {
+    height: 60vh;
+}
+
+.delete-btn {
+    border: none !important;
+}
+
+.delete-btn:hover {
+    background-color: grey !important;
+    color: black !important;
+}
+
+.btns {
+    display: flex;
+}
+
+/* Scrollbar styles */
+.scrollbar-danger::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    background-color: #F5F5F5;
+    border-radius: 10px;
+}
+
+.scrollbar-danger::-webkit-scrollbar {
+    width: 12px;
+    background-color: #F5F5F5;
+}
+
+.scrollbar-danger::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    background-color: #ff385C;
+}
+
+.scrollbar-danger {
+    scrollbar-color: #ff385C #F5F5F5;
+}
+
+/* Map */
+#map {
+    width: 55vw;
+    height: 40vh;
+    border-radius: 1rem;
+}

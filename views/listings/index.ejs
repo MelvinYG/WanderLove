@@ -1,0 +1,26 @@
+<% layout("/layouts/boilerplate") %>
+
+  <body>
+    <!-- <h3 class="mb-3">All listings here</h3> -->
+
+    <%-include("../includes/featuresBar.js") %>
+
+    <div class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-1">
+      <%for(let listing of allListings){%>
+        <a href="/listings/<%= listing._id%>" class="card-link">
+          <div class="card col">
+            <img src="<%= listing.image.url%>" class="card-img-top" alt="Listing_img" style="height: 15rem;">
+            <div class="card-img-overlay"></div>
+            <div class="card-body">
+              <h5 class="card-title"><b>
+                  <%= listing.title%>
+                </b></h5>
+              <p class="card-text">&#8377;<%= listing.price.toLocaleString("en-IN")%>/night
+                &nbsp;&nbsp;<span class="tax-info">+18% GST</span>
+              </p>
+            </div>
+          </div>
+        </a>
+        <% } %>
+    </div>
+  </body>
