@@ -9,4 +9,4 @@ This website is currently deployed at: https://wanderlove.onrender.com/listings
 
 ## Run Locally
 Clone the project
-$ git status
+`$ git status`
