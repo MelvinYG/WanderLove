@@ -6,3 +6,7 @@ This website is currently deployed at: https://wanderlove.onrender.com/listings
 
 ## Author
 - [@MelvinYG](https://github.com/MelvinYG/)
+
+## Run Locally
+Clone the project
+$ git status
