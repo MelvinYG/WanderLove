@@ -4,5 +4,5 @@ A complete MERN stack project implemented where users can login and add their li
 
 This website is currently deployed at: https://wanderlove.onrender.com/listings
 
-##Author
--
+## Author
+- @MelvinYG
