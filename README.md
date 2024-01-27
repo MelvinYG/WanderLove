@@ -8,5 +8,8 @@ This website is currently deployed at: https://wanderlove.onrender.com/listings
 - [@MelvinYG](https://github.com/MelvinYG/)
 
 ## Run Locally
-Clone the project
-`$ git status`
+
+### Clone the project
+```git
+git clone https://github.com/MelvinYG/WanderLove.git
+```
